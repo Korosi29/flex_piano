@@ -1,0 +1,51 @@
+.lessons-con {
+  font-size: 1.1rem;
+}
+.lessons-con div {
+  margin: 2rem;
+}
+.lessons-con div a {
+  color: rgb(177, 65, 0);
+  font-weight: bold;
+  display: inline-block;
+}
+.lessons-con div span {
+  font-size: 0.76rem;
+}
+
+.lesson-heading {
+  font-size: 0.9rem;
+}
+
+.topic-heading {
+  font-size: 1.5rem;
+}
+
+.sub-topic-heading {
+  font-size: 1rem;
+}
+
+.exercise-btn-con {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.exercise-btn-con .exercise-btn {
+  background-color: rgb(177, 65, 0);
+  padding: 4px 10px;
+  border: none;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+.next-prev-con {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.next-prev-con div button {
+  font-weight: bold;
+  padding: 3px 15px;
+}/*# sourceMappingURL=lessons.css.map */

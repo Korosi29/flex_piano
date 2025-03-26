@@ -1,0 +1,53 @@
+$primary_color: #333;
+$accent_color: rgb(252, 252, 252);
+$primary_bg: #1c7770;
+$secondary_bg: #dcddfa;
+$accent_bg: #f0f0f0;
+$other_bg: rgb(177, 65, 0);
+.lessons-con{
+    font-size: 1.1rem;
+    div{
+        margin: 2rem;
+        a{
+            color: $other_bg;
+            font-weight: bold;
+            display: inline-block;
+        }
+        span{
+            font-size: .76rem;
+        }
+    }
+}
+.lesson-heading{
+    font-size: .9rem;
+}
+.topic-heading{
+    font-size: 1.5rem;
+}
+.sub-topic-heading{
+    font-size: 1rem;
+}
+.exercise-btn-con{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.exercise-btn-con .exercise-btn{
+    background-color: $other_bg;
+    padding: 4px 10px;
+    border: none;
+    color: $accent_bg;
+    font-weight: bold;
+}
+.next-prev-con{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    div{
+        button{
+            font-weight: bold;
+            padding: 3px 15px;
+        }
+    }
+}
