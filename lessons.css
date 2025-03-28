@@ -48,4 +48,7 @@
 .next-prev-con div button {
   font-weight: bold;
   padding: 3px 15px;
+}
+.next-prev-con div button a {
+  text-decoration: none;
 }/*# sourceMappingURL=lessons.css.map */

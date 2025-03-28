@@ -8,22 +8,48 @@
         <link rel="stylesheet" href="sass.css">
     </head>
 <body>
+    <header>
+        <nav class="nav-bar">
+            <div class="brand">
+                <div>
+                    <a href="index.html">FLEX Piano</a>
+                </div>
+                <div>
+                    <i id="harmburger" class="fa-solid fa-bars" onclick="openMenu();"></i>
+                </div>
+            </div>
+    
+            <div id="menu">
+                <a href="index.html">Home</a>
+                <a href="lessons.html" class="selected">Lessons</a>
+                <a href="exercise.html">Exercises</a>
+                <a href="techniques.html">Techniques</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <div class="mini-piano-con" onclick="showVirtualPiano();">
+        <div class="mini-piano">
+            <div class="C w k"></div>
+            <div class="C-sharp b k"></div>
+            <div class="D w k"></div>
+            <div class="D-sharp b k"></div>
+            <div class="E w k"></div>
+        </div>
+    </div>
     <main class="container">
         <h2 class="lesson-heading">Lesson 1</h2>
         <h3 class="topic-heading">Introduction to Piano Keys</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, hic provident voluptate, perspiciatis optio quisquam expedita nostrum numquam iusto ut id. Ducimus, qui, repudiandae pariatur doloribus saepe similique nulla excepturi sed dicta porro minima perferendis libero placeat quos, illum unde possimus minus quam delectus voluptas ab? Facilis numquam blanditiis repellat ex labore officia aut odit animi, error eveniet suscipit, quam minima! Perferendis sint nulla nostrum illo unde voluptatem totam, ex deserunt impedit laudantium ullam id temporibus asperiores doloremque necessitatibus, beatae blanditiis sequi? Accusamus ipsum, modi earum corrupti quibusdam eaque voluptatem facere molestias. Harum eligendi maxime amet provident accusamus fugit veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam maiores temporibus voluptatibus. Facilis quisquam perspiciatis eius voluptatem culpa assumenda tempore quasi deleniti. Odit consequatur pariatur ipsa minima ut, praesentium expedita?</p>
-    
-        <h4 class="sub-topic-heading">Why We Need Keys in Music</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur atque debitis temporibus fugiat eius facere, officiis quas laborum illo, totam consequuntur accusamus quis illum. Nulla itaque corporis ab tempora nam praesentium, nobis dicta velit doloribus voluptate distinctio doloremque fuga ad officia nemo fugit aliquam adipisci sint hic inventore suscipit iste odio. Recusandae dolorum cupiditate ducimus. Expedita dolorum perspiciatis molestiae magnam ipsum, aliquid ea voluptates quo debitis fuga eaque id. Voluptate dolor quibusdam magnam. Quod quae molestias inventore porro itaque in asperiores sunt! Error blanditiis autem accusamus amet molestias illum praesentium adipisci. Deleniti rerum necessitatibus placeat fugit iure eos rem sint.</p>
-        <h4 class="sub-topic-heading">How to Identify Keys</h4>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolorum adipisci libero culpa debitis? Aliquid minima amet tenetur laboriosam officiis.</p>
-        <div class="piano-container">
-            <div class="piano">
-                <div class="key w1 pressed-white-k" data-note="C">C</div>
+        <p>The piano keyboard may look confusing at first, but it follows a simple pattern. If you look closely, you’ll notice that the keys are divided into white and black keys. The black keys are arranged in groups of two and three, which helps in identifying notes easily. See figure 1.0</p>
+
+        <div class="piano-diagram-container">
+            <div class="piano-diagram">
+                <div class="key w1" data-note="C">C</div>
                 <div class="key black b1" data-note="C#">C#</div>
-                <div class="key w2 pressed-white-k" data-note="D">D</div>
+                <div class="key w2" data-note="D">D</div>
                 <div class="key black b2" data-note="D#">D#</div>
-                <div class="key w3 pressed-white-k" data-note="E">E</div>
+                <div class="key w3" data-note="E">E</div>
                 <div class="key w4" data-note="F">F</div>
                 <div class="key black b3" data-note="F#">F#</div>
                 <div class="key w5" data-note="G">G</div>
@@ -35,15 +61,86 @@
             </div>
         </div>
         <p class="fig-text">fig 1.0</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores atque, a eius voluptates rerum repellendus, facere numquam, libero at exercitationem. Accusantium quaerat facilis dolore aspernatur pariatur assumenda exercitationem delectus nihil ipsa, hic, itaque dicta sit! Ab sunt minima, vitae provident voluptate pariatur amet nulla laborum iusto fugiat, excepturi nostrum.</p>
+        <p>
+            The white keys follow a repeating pattern of seven letters: A, B, C, D, E, F, and G. After G, the cycle starts over again from A. This pattern continues across the entire keyboard, no matter how big or small the piano is.
+            
+            The black keys are placed between some of the white keys. These black keys are used for sharp (♯) and flat (♭) notes. Let's explore that a bit. A sharp (♯) means the note is slightly higher, while a flat (♭) means the note is slightly lower. For example, the black key after C is called C♯ (C sharp), and the same key can also be called D♭ (D flat) because it is just before D.</p>
+            
+            <p>One important note on the keyboard is Middle C. It is usually found near the center of the piano and is a great starting point for beginners. Finding Middle C makes it easier to understand the rest of the keyboard.
+            
+            By learning these basic keys and their pattern, you’ll have a strong foundation for playing the piano. Over time, you will get used to recognizing notes, playing melodies, and even creating your own music!
+            </p>
     
-        <div class="piano-container">
-            <div class="piano">
+        <h4 class="sub-topic-heading">Why We Need Keys in Music</h4>
+        <p>Last week, I played with my band on the of D# or Eb. A musician knows what that key is and where to find it and play it on the piano. So music keys are important because they give structure and organization to the sounds we hear. A key is like a home base for a song—it tells us which notes will sound good together and helps create a specific mood or feeling.
+
+            Each key is built around a main note, called the tonic. For example, in the key of C major, the note C is the tonic, and the other notes in the key are chosen based on a specific pattern. This pattern makes it easier for musicians to play songs without hitting notes that sound out of place.
+            
+            Keys also help in chord progressions. When a song follows a certain key, it means the chords will fit naturally together, making the music sound smooth and pleasing. This is why many songs in the same key sound good when played together.</p>
+            
+            <p>Another reason we need keys is that they help musicians communicate and improvise. If a band decides to play in the key of G major, every musician knows which notes and chords to use, making it easier to play together without confusion.
+            
+            Overall, keys give music a sense of direction, making songs more enjoyable to play and listen to. Without keys, music would sound random and disorganized!.</p>
+        <h4 class="sub-topic-heading">How to Identify Keys</h4>
+        <p>
+            Identifying keys on the piano is simple once you understand the pattern of white and black keys. The keyboard follows a repeating arrangement of white keys and black keys, which makes it easy to find any note. The following tips will you identify keys more easily.
+        </p>
+        <h5>1. Recognizing the Black Key Pattern</h5>
+        <ul>
+            <li>The black keys are grouped in twos and threes across the keyboard.</li>
+
+            <li>This pattern helps in locating specific notes quickly.</li>
+        </ul>
+
+        <h5>2. Finding the White Keys</h5>
+        <p>
+            Each white key is named after a letter from the musical alphabet:
+            A, B, C, D, E, F, and G (then it repeats).
+            </p>
+            <p>Here’s how to find them:
+        </p>
+        <ul>
+            <li>Find a set of two black keys, the white key just before them is C.</li>
+            <li>Find a set of two black keys, the white key just before them is C.</li>
+        </ul>
+        <p>Once you find C or F, you can count forward or backward using the musical alphabet to identify the other keys.</p>
+
+        <div class="piano-diagram-container">
+            <div class="piano-diagram">
                 <div class="key w1 pressed-white-k" data-note="C">C</div>
                 <div class="key black b1" data-note="C#">C#</div>
-                <div class="key w2 pressed-white-k" data-note="D">D</div>
+                <div class="key w2" data-note="D">D</div>
                 <div class="key black b2" data-note="D#">D#</div>
-                <div class="key w3 pressed-white-k" data-note="E">E</div>
+                <div class="key w3" data-note="E">E</div>
+                <div class="key w4 pressed-white-k" data-note="F">F</div>
+                <div class="key black b3" data-note="F#">F#</div>
+                <div class="key w5" data-note="G">G</div>
+                <div class="key black b4" data-note="G#">G#</div>
+                <div class="key w6" data-note="A">A</div>
+                <div class="key black b5" data-note="A#">A#</div>
+                <div class="key w7" data-note="B">B</div>
+                <div class="key w8" data-note="C">C</div>
+            </div>
+        </div>
+
+        <p class="fig-text">fig 1.1 C and F pressed</p>
+
+        <h5>3. Identifying Black Keys (Sharps and Flats)</h5>
+        <p>The black keys are named based on their position relative to the white keys:</p>
+
+        <ul>
+            <li>A sharp (♯) means moving one step higher (to the right).</li>
+            <li>A flat (♭) means moving one step lower (to the left).</li>
+        </ul>
+        <p>For example let's consider the key C#</p>
+
+        <div class="piano-diagram-container">
+            <div class="piano-diagram">
+                <div class="key w1" data-note="C">C</div>
+                <div class="key black b1 pressed-black-k" data-note="C#">C#</div>
+                <div class="key w2" data-note="D">D</div>
+                <div class="key black b2" data-note="D#">D#</div>
+                <div class="key w3" data-note="E">E</div>
                 <div class="key w4" data-note="F">F</div>
                 <div class="key black b3" data-note="F#">F#</div>
                 <div class="key w5" data-note="G">G</div>
@@ -54,37 +151,37 @@
                 <div class="key w8" data-note="C">C</div>
             </div>
         </div>
-        <p class="fig-text">fig 1.2</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusamus ad sapiente necessitatibus, voluptatem illo iusto repellat quia quo beatae fuga molestiae facere maiores eum inventore unde laborum id nesciunt. Rem qui debitis fuga repudiandae reiciendis. Dolores, accusantium? Blanditiis quod nam, accusantium quia delectus dignissimos animi fuga deserunt est omnis a ipsum. Dignissimos, cumque natus, optio officia illum maiores, repellendus ex placeat eveniet laboriosam doloribus! Aut natus esse quis placeat aspernatur corporis quos, nihil, debitis, officiis facilis cupiditate pariatur blanditiis odio expedita nisi voluptatem! Accusamus, quisquam ipsum delectus cumque earum exercitationem, distinctio quo aspernatur, obcaecati dignissimos quas in facilis dolore!</p>
-    
-        <div class="piano-container">
-            <div class="piano">
-                <div class="key w1 pressed-white-k" data-note="C">C</div>
-                <div class="key black b1" data-note="C#">C#</div>
-                <div class="key w2 pressed-white-k" data-note="D">D</div>
-                <div class="key black b2" data-note="D#">D#</div>
-                <div class="key w3 pressed-white-k" data-note="E">E</div>
-                <div class="key w4" data-note="F">F</div>
-                <div class="key black b3" data-note="F#">F#</div>
-                <div class="key w5" data-note="G">G</div>
-                <div class="key black b4" data-note="G#">G#</div>
-                <div class="key w6" data-note="A">A</div>
-                <div class="key black b5" data-note="A#">A#</div>
-                <div class="key w7" data-note="B">B</div>
-                <div class="key w8" data-note="C">C</div>
-            </div>
-        </div>
-        <p class="fig-text">fig 1.3</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corrupti aut rerum eos nobis saepe, dolores illum neque quisquam explicabo placeat? Impedit inventore obcaecati saepe porro consequatur minima doloremque quas, consectetur voluptatibus quos incidunt non. Nesciunt ducimus quibusdam quisquam earum magnam velit amet fuga? Voluptatem corporis, aliquam molestiae aliquid nostrum tenetur, consequatur dignissimos esse earum in ipsum sit totam quidem error exercitationem incidunt autem labore accusamus a! Eum, quas perferendis?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt neque quas odit vero fuga aliquid, omnis consectetur vel laboriosam voluptatem suscipit labore molestiae odio nam, debitis harum minus maiores pariatur!</p>
+
+        <ul>
+            <li>The black key after C is C♯ (C sharp).</li>
+            <li>The black key before D is D♭ (D flat).</li>
+        </ul>
+        <p>
+            Now we can draw the conclusion that each black key has two names (one sharp and one flat), depending on the note before or after it.
+        </p>
+
+        <h5>4. Finding Middle C</h5>
+        <p>Middle C is an important reference point. It is located near the center of the keyboard, just to the left of a group of two black keys. Many beginner lessons start from Middle C because it helps in understanding the layout of the piano.</p>
+
+        <h5>5. Recognizing Octaves</h5>
+        <p>The keyboard follows a repeating pattern called an octave. Once you learn the notes in one section, you can use the same pattern to identify notes higher or lower on the keyboard. We will talk about octaves in lesson 2</p>
+        <h5>Activity</h5>
+        <ul>
+            <li>Recognize your piano keys pattern</li>
+            <li>Be able to identify each key by just looking at it</li>
+            <li>Identify the middle C</li>
+            <li>Identify C and F all over your physical piano</li>
+        </ul>
+        <h4 class="sub-topic-heading">Lesson Conclusion</h4>
+        <p>Understanding the piabo keys is the practically the most important thing you have to understand as a beginner on the piano before going through any lesson because anything you will be taught will still point back to these basics. Don't forget to go through the lesson exercise and also Practice! Practice! Practice!</p>
         <div class="exercise-btn-con"><button class="exercise-btn excercise1">Exercise <i class="fa fa-play"></i> 1</button></div>
     
         <div class="next-prev-con">
             <div class="prev-btn-con">
-                <button class="disabled-btn">Prev</button>
+                 <button class="disabled-btn">Prev</button>
             </div>
             <div class="next-btn-con">
-                <button>Next</button>
+                <a href="lesson2.html"><button>Next</button></a>
             </div>
         </div>
     </main>
