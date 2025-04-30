@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-.lessons-con {
-  font-size: 1.1rem;
-}
 .lessons-con div {
   margin: 2rem;
 }
@@ -114,10 +111,11 @@ button {
 }
 
 .get-started-btn {
-  background-color: #333;
-  padding: 4px 10px;
+  background-color: green;
+  padding: 5px 15px;
   color: #dcddfa;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
   border: none;
   border-radius: 100px;
 }
@@ -131,7 +129,7 @@ button {
   position: fixed;
   top: 50px;
   left: 0;
-  background-image: linear-gradient(rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5)), url("piano.jpg");
+  background-image: linear-gradient(rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5)), url("../images/piano.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -162,7 +160,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url("piano.jpg");
+  background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url("../images/piano.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -191,7 +189,7 @@ button {
   overflow-x: auto;
   overflow-y: hidden;
   width: 100%;
-  height: 175px;
+  height: 180px;
 }
 
 .piano-diagram {
@@ -243,6 +241,26 @@ button {
   left: 234px;
 }
 
+.b6 {
+  left: 315px;
+}
+
+.b7 {
+  left: 356px;
+}
+
+.b8 {
+  left: 438px;
+}
+
+.b9 {
+  left: 479px;
+}
+
+.b10 {
+  left: 520px;
+}
+
 .w1 {
   left: 0;
 }
@@ -273,6 +291,34 @@ button {
 
 .w8 {
   left: 287px;
+}
+
+.w9 {
+  left: 328px;
+}
+
+.w10 {
+  left: 369px;
+}
+
+.w11 {
+  left: 410px;
+}
+
+.w12 {
+  left: 451px;
+}
+
+.w13 {
+  left: 492px;
+}
+
+.w14 {
+  left: 533px;
+}
+
+.w15 {
+  left: 574px;
 }
 
 .pressed-black-k {
@@ -342,7 +388,7 @@ button {
 }
 .footer-con .brands-logo i {
   margin: 0 2rem;
-  color: #1c7770;
+  color: black;
 }
 .footer-con .options {
   font-size: 0.9rem;
@@ -353,4 +399,36 @@ button {
 }
 .footer-con .flexora {
   margin-top: 2rem;
+}
+
+.virtual-piano-con {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(10, 10, 10);
+  z-index: 50;
+  display: none;
+}
+
+.virtual-piano-inner-con {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  height: 218px;
+  position: relative;
+  margin-left: 15px;
+  top: -30px;
+  margin-top: 100px;
+}
+
+.v-p-key:active {
+  background-color: #333;
+}
+
+.v-piano-close-btn {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 0 10px 10px;
 }/*# sourceMappingURL=sass.css.map */

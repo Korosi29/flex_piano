@@ -61,10 +61,11 @@ button{
     margin: 2rem 0;
 }
 .get-started-btn{
-    background-color: $primary_color;
-    padding: 4px 10px;
+    background-color: green;
+    padding: 5px 15px;
     color: $secondary_bg;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
     border: none;
     border-radius: 100px;
 }
@@ -76,7 +77,7 @@ button{
     position: fixed;
     top: 50px;
     left: 0;
-    background-image: linear-gradient(rgba(10,10,10, .5), rgba(10,10,10, .5)), url('piano.jpg');
+    background-image: linear-gradient(rgba(10,10,10, .5), rgba(10,10,10, .5)), url('../images/piano.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -104,7 +105,7 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(rgba(10,10,10, .8), rgba(10,10,10, .8)), url('piano.jpg');
+    background-image: linear-gradient(rgba(10,10,10, .8), rgba(10,10,10, .8)), url('../images/piano.jpg');
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -130,7 +131,7 @@ button{
     overflow-x: auto;
     overflow-y: hidden;
     width: 100%;
-    height: 175px;
+    height: 180px;
 }
 .piano-diagram {
     display: flex;
@@ -164,6 +165,11 @@ button{
 .b3{left: 151px;}
 .b4{left: 192px;}
 .b5{left: 234px;}
+.b6{left: 315px;}
+.b7{left: 356px;}
+.b8{left: 438px;}
+.b9{left: 479px;}
+.b10{left: 520px;}
 .w1{left: 0;}
 .w2{left: 41px;}
 .w3{left: 82px;}
@@ -172,6 +178,14 @@ button{
 .w6{left: 205px;}
 .w7{left: 246px;}
 .w8{left: 287px;}
+.w9{left: 328px;}
+.w10{left: 369px;}
+.w11{left: 410px;}
+.w12{left: 451px;}
+.w13{left: 492px;}
+.w14{left: 533px;}
+.w15{left: 574px;}
+
 
 .pressed-black-k{
     background-color: #555;
@@ -227,7 +241,7 @@ button{
         font-size: 1.5rem;
         i{
             margin: 0 2rem;
-            color: $primary_bg;
+            color: black;
         }
     }
     .options{
@@ -240,4 +254,34 @@ button{
     .flexora{
         margin-top: 2rem;
     }
+}
+
+
+.virtual-piano-con{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(10,10,10);
+    z-index: 50;
+    display: none;
+}
+.virtual-piano-inner-con{
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    height: 218px;
+    position: relative;
+    margin-left:15px;
+    top: -30px;
+    margin-top: 100px;
+}
+.v-p-key:active{
+    background-color: $primary_color;
+}
+.v-piano-close-btn{
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 0 10px 10px;
 }

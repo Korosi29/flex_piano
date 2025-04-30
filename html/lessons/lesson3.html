@@ -4,15 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Piano Tutorial</title>
-        <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
-        <link rel="stylesheet" href="sass.css">
+        <link rel="stylesheet" href="../../fontawesome-free-6.7.2-web/css/all.min.css">
+        <link rel="stylesheet" href="../../sass-css/sass.css">
     </head>
 <body>
     <header>
         <nav class="nav-bar">
             <div class="brand">
                 <div>
-                    <a href="">FLEX Piano</a>
+                    <a href="../../index.html">FLEX Piano</a>
                 </div>
                 <div>
                     <i id="harmburger" 
@@ -21,12 +21,12 @@
             </div>
     
             <div id="menu">
-                <a href="index.html">Home</a>
+                <a href="../../index.html">Home</a>
                 <a href="lessons.html" class="selected">Lessons</a>
-                <a href="exercise.html">Exercises</a>
-                <a href="techniques.html">Techniques</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <a href="../exercises/exercises.html">Exercises</a>
+                 <a href="../../techniques.html">Techniques</a>
+                 <a href="../../about.html">About</a>
+                <a href="../../contact.html">Contact</a>
             </div>
         </nav>
     </header>
@@ -436,6 +436,42 @@
             </div>
         </div>
     </main>
-    <script src="script.js"></script>
+
+    <div class="virtual-piano-con">
+
+        <div class="virtual-piano-inner-con">
+            <i class="fa-solid fa-x v-piano-close-btn" onclick="showVirtualPiano();"></i>
+            <div class="virtual-piano-diagram">
+                <div class="key v-p-key w1" onclick="playSound('C4.m4a')">C</div>
+                <div class="key v-p-key black b1" onclick="playSound('Cs4.m4a')">C# Db</div>
+                <div class="key v-p-key w2" onclick="playSound('D4.m4a')">D</div>
+                <div class="key v-p-key black b2" onclick="playSound('Ds4.m4a')">D# Eb</div>
+                <div class="key v-p-key w3" onclick="playSound('E4.m4a')">E</div>
+                <div class="key v-p-key w4" onclick="playSound('F4.m4a')">F</div>
+                <div class="key v-p-key black b3" onclick="playSound('Fs4.m4a')">F# Gb</div>
+                <div class="key v-p-key w5" onclick="playSound('G4.m4a')">G</div>
+                <div class="key v-p-key black b4" onclick="playSound('Gs4.m4a')">G# Ab</div>
+                <div class="key v-p-key w6" onclick="playSound('A4.m4a')">A</div>
+                <div class="key v-p-key black b5" onclick="playSound('As4.m4a')">A# Bb</div>
+                <div class="key v-p-key w7" onclick="playSound('B4.m4a')">B</div>
+                <div class="key v-p-key w8" onclick="playSound('C5.m4a')">C</div>
+
+                <div class="key v-p-key black b6" onclick="playSound('Cs5.m4a')">C# Db</div>
+                <div class="key v-p-key w9" onclick="playSound('D5.m4a')">D</div>
+                <div class="key v-p-key black b7" onclick="playSound('Ds5.m4a')">D# Eb</div>
+                <div class="key v-p-key w10" onclick="playSound('E5.m4a')">E</div>
+                <div class="key v-p-key w11" onclick="playSound('F5.m4a')">F</div>
+                <div class="key v-p-key black b8" onclick="playSound('Fs5.m4a')">F# Gb</div>
+                <div class="key v-p-key w12" onclick="playSound('G5.m4a')">G</div>
+                <div class="key v-p-key black b9" onclick="playSound('Gs5.m4a')">G# Ab</div>
+                <div class="key v-p-key w13" onclick="playSound('A5.m4a')">A</div>
+                <div class="key v-p-key black b10" onclick="playSound('As5.m4a')">A# Bb</div>
+                <div class="key v-p-key w14" onclick="playSound('B5.m4a')">B</div>
+                <div class="key v-p-key w15" onclick="playSound('C6.m4a')">C</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/script.js"></script>
 </body>
 </html>

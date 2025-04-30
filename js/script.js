@@ -1,3 +1,4 @@
+
 function openMenu(){
     let menuElement = document.getElementById('menu');
     if(menuElement.style.display === 'flex'){
@@ -18,4 +19,18 @@ function pressKey(key){
         key.style.backgroundColor = '#c0c0c0';
     }
     
+}
+function showVirtualPiano() {
+    let vPianoEl = document.querySelector('.virtual-piano-con');
+    if(vPianoEl.style.display !== 'flex'){
+        vPianoEl.style.display = 'flex';
+    }
+    else{
+        vPianoEl.style.display = 'none';
+    }
+}
+
+function playSound(note){
+    const noteSound = new Audio(`notesData/${note}`);
+    noteSound.play();
 }
