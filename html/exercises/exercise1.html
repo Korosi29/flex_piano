@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <title>Piano Tutorial</title>
+    <link rel="stylesheet" href="../../fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../../sass-css/sass.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+<header>
+    <nav class="nav-bar">
+        <div class="brand">
+            <div>
+                <a href="">FLEX Piano</a>
+            </div>
+            <div>
+                <i id="harmburger" class="fa-solid fa-bars" onclick="openMenu();"></i>
+            </div>
+        </div>
+
+        <div id="menu">
+            <a href="../../index.html">Home</a>
+            <a href="../lessons/lessons.html">Lessons</a>
+            <a href="exercises.html" class="selected">Exercises</a>
+            <a href="../../techniques.html">Techniques</a>
+            <a href="../../about.html">About</a>
+            <a href="../../contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+    <main class="container">
+
+        <h2 class="topic-heading">Exercise 1</h2>
+        <p>In the same order, which keys are pressed in the diagram below? Make sure you know the difference between flats and sharps</p>
+
+        <div class="piano-diagram-container">
+            <div class="piano-diagram">
+                <div class="key w1" data-note="C">C</div>
+                <div class="key black b1 pressed-black-k" data-note="C#">C#</div>
+                <div class="key w2" data-note="D">D</div>
+                <div class="key black b2" data-note="D#">D#</div>
+                <div class="key w3" data-note="E">E</div>
+                <div class="key w4 pressed-white-k" data-note="F">F</div>
+                <div class="key black b3" data-note="F#">F#</div>
+                <div class="key w5" data-note="G">G</div>
+                <div class="key black b4 pressed-black-k" data-note="G#">G#</div>
+                <div class="key w6" data-note="A">A</div>
+                <div class="key black b5" data-note="A#">A#</div>
+                <div class="key w7" data-note="B">B</div>
+                <div class="key w8 pressed-white-k" data-note="C">C</div>
+            </div>
+        </div>
+        <br>
+        <form action="" id="formEx1">
+            <p>Choose the correct answer:</p>
+          
+            <label for="option1">
+              <input type="radio" id="option1" name="answerEx1" value="D F G E"> D F G G#
+            </label>
+            <br>
+          
+            <label for="option2">
+              <input type="radio" id="option2" name="answerEx1" value="C G# F C#"> C G# F C#
+            </label>
+            <br>
+          
+            <label for="option3">
+              <input type="radio" id="option3" name="answerEx1" value="C# F G# C"> C# F G# C
+            </label>
+            <br>
+          
+            <label for="option4">
+              <input type="radio" id="option4" name="answerEx1" value="D# C# G# C#"> D# C# G# C#
+            </label>
+            <br><br>
+          
+            <button type="submit">Submit</button>
+          </form>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-con">
+            <div class="options">
+                <a href="../../courses.html">Courses</a>
+
+                <a href="../../sponsors.html">Sponsored</a>
+
+                <a href="../../about.html">About</a>
+            </div>
+            <div class="follow">
+                <p>Follow FLEXORA@</p>
+            </div>
+            <div class="brands-logo">
+                <a href="https://www.facebook.com/profile.php?id=61575333881265" target="_blank"><i class="fa-brands 
+                    fa-facebook"></i></a>
+                <a href="https://x.com/FlexoraInc?t=bOx3QAULXDr4ulPPLKC9iw&s=09" target="_blank"><i class="fa-brands 
+                    fa-x-twitter"></i></a>
+                <a href="https://youtube.com/@flexorainc?si=ZuwhiTfpiGgDdle2" target="_blank"><i class="fa-brands 
+                    fa-youtube"></i></a>
+            </div>
+            <div class="flexora">FLEXORA 2025 &trade;</div>
+        </div>
+    </footer>
+    <script src="../../js/script.js"></script>
+</body>
+</html>
+

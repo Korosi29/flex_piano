@@ -39,6 +39,11 @@ $other_bg: rgb(177, 65, 0);
     color: $accent_bg;
     font-weight: bold;
 }
+.completion{
+    color: brown;
+    font-size: .7rem !important;
+    font-style: italic;
+}
 .next-prev-con{
     display: flex;
     justify-content: space-between;

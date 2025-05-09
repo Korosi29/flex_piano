@@ -38,6 +38,12 @@
   font-weight: bold;
 }
 
+.completion {
+  color: brown;
+  font-size: 0.7rem !important;
+  font-style: italic;
+}
+
 .next-prev-con {
   display: flex;
   justify-content: space-between;
@@ -431,4 +437,13 @@ button {
   color: white;
   font-size: 1.2rem;
   margin: 0 0 10px 10px;
+}
+
+.exercise {
+  font-size: 1rem;
+}
+.exercise span {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: brown;
 }/*# sourceMappingURL=sass.css.map */
