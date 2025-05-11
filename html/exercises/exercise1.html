@@ -35,7 +35,7 @@
     <main class="container">
 
         <h2 class="topic-heading">Exercise 1</h2>
-        <p>In the same order, which keys are pressed in the diagram below? Make sure you know the difference between flats and sharps</p>
+        <p>In the same order, which keys are pressed in the diagram below? Make sure you understand the concept of sharps/flats</p>
 
         <div class="piano-diagram-container">
             <div class="piano-diagram">
@@ -55,30 +55,30 @@
             </div>
         </div>
         <br>
-        <form action="" id="formEx1">
+        <form action="" id="formEx">
             <p>Choose the correct answer:</p>
           
             <label for="option1">
-              <input type="radio" id="option1" name="answerEx1" value="D F G E"> D F G G#
+              <input type="radio" id="option1" name="answerEx" value="wrong"> D F G Gb
             </label>
             <br>
           
             <label for="option2">
-              <input type="radio" id="option2" name="answerEx1" value="C G# F C#"> C G# F C#
+              <input type="radio" id="option2" name="answerEx" value="wrong"> C Gb F C#
             </label>
             <br>
           
             <label for="option3">
-              <input type="radio" id="option3" name="answerEx1" value="C# F G# C"> C# F G# C
+              <input type="radio" id="option3" name="answerEx" value="right"> C# F Ab C
             </label>
             <br>
           
             <label for="option4">
-              <input type="radio" id="option4" name="answerEx1" value="D# C# G# C#"> D# C# G# C#
+              <input type="radio" id="option4" name="answerEx" value="wrong"> Db C# Gb C#
             </label>
             <br><br>
           
-            <button type="submit">Submit</button>
+            <button class="submit-answr-btn" onclick="trackExercise(1)" type="submit" id="submit" value="1">Submit</button>
           </form>
         
     </main>

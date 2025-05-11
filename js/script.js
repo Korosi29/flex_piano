@@ -35,9 +35,11 @@ function playSound(note){
     noteSound.play();
 }
 
-// document.getElementById('form').addEventListener('submit', send);
-
-function send(event){
+let contactMeBtn = document.getElementById('form');
+if(contactMeBtn){
+    contactMeBtn.addEventListener('submit', contactMe);
+}
+function contactMe(event){
 
     event.preventDefault();
 
@@ -52,8 +54,7 @@ function send(event){
         title:"Server Not Available!",
         text: "Server currently not availble please try again later",
         icon: "error",
-        showConfirmButton: false,
-        timer: 3000,
+        confirmButtonColor: "#d03543",
         }
     )
    }
@@ -69,13 +70,13 @@ function wrongAnswerAlert(){
         title:"Wrong!",
         text: responses[randomRespon],
         icon: "error",
-        showConfirmButton: false,
-        timer: 3000,
+        confirmButtonText: "<b>Try again</b>",
+        confirmButtonColor: "#d03543",
         }
     )
 }
 
-function rightAnswerAlert(){
+function rightAnswerAlert(lesson){
     const responses = ['Great work! Keep it up.', 'Excellent! You are on fire.', 'Awesome! You are doing great', 'Beautiful! You are smart', 'Genius! Keep up the good work'];
 
     const randomRespon = Math.floor(Math.random() * responses.length);
@@ -83,10 +84,17 @@ function rightAnswerAlert(){
         title:"Lesson Completed",
         text: responses[randomRespon],
         icon: "success",
-        showConfirmButton: false,
-        timer: 3000,
+        showCancelButton: true,
+        reverseButtons: true,
+        confirmButtonText: "<b>Next Lesson</b>",
+        confirmButtonColor: "#008020",
         }
-    )
+    ).then((result) => {
+        if(result.isConfirmed){
+            window.location.href = `../lessons/lesson${lesson}.html`;
+        }else{
+        }
+    })
 }
 
 function noAnswerAlert(){
@@ -95,28 +103,31 @@ function noAnswerAlert(){
         title:"Choose An Option",
         text: "Please enter any of the given options",
         icon: "warning",
-        showConfirmButton: false,
-        timer: 3000,
+        confirmButtonText: "<b>Alright</b>",
+        confirmButtonColor: "#c08000",
         }
     )
 }
 
 
-let formEx1 = document.getElementById('formEx1');
-if(formEx1){
-    formEx1.addEventListener('submit', exercise1);
+let formEx = document.getElementById('formEx');
+if(formEx){
+    formEx.addEventListener('submit', exercise);
 }
 
-function exercise1(event){
+function exercise(event){
 
     event.preventDefault();
 
-    let userOption = document.querySelector('input[name="answerEx1"]:checked');
+    let lessonIndx = parseInt(document.getElementById('submit').value);
 
+    const nextLessonNumber = lessonIndx + 1;
+
+    let userOption = document.querySelector('input[name="answerEx"]:checked');
     if(userOption){
-        if(userOption.value === 'C# F G# C'){
-            rightAnswerAlert();
-            localStorage.setItem('lesson1', 'lesson1Completed')
+        if(userOption.value === 'right'){
+            rightAnswerAlert(nextLessonNumber);//pass Number of next lesson;
+            localStorage.setItem(`lesson${lessonIndx}`, 'lessonCompleted');
         }
         else{
             wrongAnswerAlert();
@@ -127,8 +138,17 @@ function exercise1(event){
     }
 }
 
-if(localStorage.getItem('lesson1')){
-    let text = document.getElementById('exCompleted1');
-    text.innerHTML = 'Completed';
-    text.style.color = 'green'
+
+
+
+
+for (let i = 0; i < 15; i++) {
+    if(localStorage.getItem(`lesson${i}`)){
+        let text = document.getElementById(`exCompleted${i}`);
+        if(text){
+            text.innerHTML = 'Completed';
+            text.style.color = 'green';
+        }
+    }    
+    
 }

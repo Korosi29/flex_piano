@@ -54,4 +54,15 @@
 }
 .next-prev-con div button a {
   text-decoration: none;
+}
+
+.submit-answr-btn {
+  color: white;
+  background: #008020;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: none;
+  padding: 5px 20px;
+  margin-top: 30px;
 }/*# sourceMappingURL=lessons.css.map */
