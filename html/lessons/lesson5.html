@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Piano Tutorial</title>
+        <link rel="stylesheet" href="../../fontawesome-free-6.7.2-web/css/all.min.css">
+        <link rel="stylesheet" href="../../sass-css/sass.css">
+    </head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="brand">
+                <div>
+                    <a href="../../index.html">FLEX Piano</a>
+                </div>
+                <div>
+                    <i id="harmburger" class="fa-solid fa-bars" onclick="openMenu();"></i>
+                </div>
+            </div>
+    
+            <div id="menu">
+                <a href="../../index.html">Home</a>
+                <a href="lessons.html" class="selected">Lessons</a>
+                <a href="../exercises/exercises.html">Exercises</a>
+                 <a href="../../techniques.html">Techniques</a>
+                 <a href="../../about.html">About</a>
+                <a href="../../contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <div class="mini-piano-con" onclick="showVirtualPiano();">
+        <div class="mini-piano">
+            <div class="C w k"></div>
+            <div class="C-sharp b k"></div>
+            <div class="D w k"></div>
+            <div class="D-sharp b k"></div>
+            <div class="E w k"></div>
+        </div>
+    </div>
+    <main class="container">
+        <h2 class="lesson-heading">Lesson 5</h2>
+        <h3 class="topic-heading">The Major Scale</h3>
+
+        <p>
+            The major scale is one of the many scales we have in music but what makes the major scale special is the fact that all our diatonic chords(Do Re Mi Fah....) are built upon this scale. A scale is the arrangement of specific notes in a specific interval and is played sequentially. I hope that makes sense.
+        </p>
+
+        <p>
+            The major scale consist of the following intervals: W-W-H-W-W-W-H
+            W stands for Whole Tone or Tone
+            While H stands  for Half Step or Semitone. For example key F major scale
+        </p>
+
+        <div class="piano-diagram-container">
+            <div class="piano-diagram">
+                <div class="key w1" data-note="C">C</div>
+                <div class="key black b1" data-note="C#">C#</div>
+                <div class="key w2" data-note="D">D</div>
+                <div class="key black b2" data-note="D#">D#</div>
+                <div class="key w3" data-note="E">E</div>
+                <div class="key w4 pressed-white-k" data-note="F">F</div>
+                <div class="key black b3" data-note="F#">F#</div>
+                <div class="key w5 pressed-white-k" data-note="G">G</div>
+                <div class="key black b4" data-note="G#">G#</div>
+                <div class="key w6 pressed-white-k" data-note="A">A</div>
+                <div class="key black b5 pressed-black-k" data-note="A#">A#</div>
+                <div class="key w7" data-note="B">B</div>
+                <div class="key w8 pressed-white-k" data-note="C">C</div>
+                <div class="key black b6" data-note="C#">C#</div>
+                <div class="key w9 pressed-white-k" data-note="D">D</div>
+                <div class="key black b7" data-note="C#">D#</div>
+                <div class="key w10 pressed-white-k" data-note="E">E</div>
+                <div class="key w11 pressed-white-k" data-note="F">F</div>
+                <div class="key black b8" data-note="F#">F#</div>
+                <div class="key w12" data-note="G">G</div>
+                <div class="key black b9" data-note="G#">G#</div>
+                <div class="key w13" data-note="A">A</div>
+                <div class="key black b10" data-note="A#">A#</div>
+                <div class="key w14" data-note="B">B</div>
+                <div class="key w15" data-note="C">C</div>
+            
+            </div>
+        </div>
+        <p class="fig-text">fig 1.0 F Major Scale</p>
+
+        <p>
+            The F major has 6 whites keys and one black key. Observe the interval. It says Tone-Tone-Semitone-Tone-Tone-Tone-Semitone or W-W-H-W-W-W-H. With this formula, we can now play the major scale of any key without knowing it first hand.
+        </p>
+
+        <h5>F# Major Scale</h5>
+        <p>
+            Let's play the major scale of key F# major.
+            Following the same formula we would have something like this:
+        </p>
+
+
+        <div class="piano-diagram-container">
+            <div class="piano-diagram">
+                <div class="key w1" data-note="C">C</div>
+                <div class="key black b1" data-note="C#">C#</div>
+                <div class="key w2" data-note="D">D</div>
+                <div class="key black b2" data-note="D#">D#</div>
+                <div class="key w3" data-note="E">E</div>
+                <div class="key w4" data-note="F">F</div>
+                <div class="key black b3 pressed-black-k" data-note="F#">F#</div>
+                <div class="key w5" data-note="G">G</div>
+                <div class="key black b4 pressed-black-k" data-note="G#">G#</div>
+                <div class="key w6" data-note="A">A</div>
+                <div class="key black b5 pressed-black-k" data-note="A#">A#</div>
+                <div class="key w7 pressed-white-k" data-note="B">B</div>
+                <div class="key w8" data-note="C">C</div>
+                <div class="key black b6 pressed-black-k" data-note="C#">C#</div>
+                <div class="key w9" data-note="D">D</div>
+                <div class="key black b7 pressed-black-k" data-note="D#">D#</div>
+                <div class="key w10" data-note="E">E</div>
+                <div class="key w11 pressed-white-k" data-note="F">F</div>
+                <div class="key black b8 pressed-black-k" data-note="F#">F#</div>
+                <div class="key w12" data-note="G">G</div>
+                <div class="key black b9" data-note="G#">G#</div>
+                <div class="key w13" data-note="A">A</div>
+                <div class="key black b10" data-note="A#">A#</div>
+                <div class="key w14" data-note="B">B</div>
+                <div class="key w15" data-note="C">C</div>
+            
+            </div>
+        </div>
+        <p class="fig-text">fig 1.1 F# Major Scale</p>        
+        <p>The C major scale is even simpler.</p>
+
+      <div class="piano-diagram-container">
+         <div class="piano-diagram">
+        <div class="key w1 pressed-white-k" data-note="C">C</div>
+        <div class="key black b1" data-note="C#">C#</div>
+        <div class="key w2 pressed-white-k" data-note="D">D</div>
+        <div class="key black b2" data-note="D#">D#</div>
+        <div class="key w3 pressed-white-k" data-note="E">E</div>
+        <div class="key w4 pressed-white-k" data-note="F">F</div>
+        <div class="key black b3" data-note="F#">F#</div>
+        <div class="key w5 pressed-white-k" data-note="G">G</div>
+        <div class="key black b4" data-note="G#">G#</div>
+        <div class="key w6 pressed-white-k" data-note="A">A</div>
+        <div class="key black b5" data-note="A#">A#</div>
+        <div class="key w7 pressed-white-k" data-note="B">B</div>
+        <div class="key w8 pressed-white-k" data-note="C">C</div>
+        <div class="key black b6" data-note="C#">C#</div>
+        <div class="key w9" data-note="D">D</div>
+        <div class="key black b7" data-note="C#">D#</div>
+        <div class="key w10" data-note="E">E</div>
+        <div class="key w11" data-note="F">F</div>
+        <div class="key black b8" data-note="F#">F#</div>
+        <div class="key w12" data-note="G">G</div>
+        <div class="key black b9" data-note="G#">G#</div>
+        <div class="key w13" data-note="A">A</div>
+        <div class="key black b10" data-note="A#">A#</div>
+        <div class="key w14" data-note="B">B</div>
+        <div class="key w15" data-note="C">C</div>
+    
+    </div>
+</div>
+        <p class="fig-text">fig 1.2 C Major Scale</p>
+
+
+<h3 class="sub-topic-heading">Solfa Notation</h3>
+
+        <p>
+            You might ask what is solfa notation (also Solfeggio) and what does it has to do with the major scale? Well, the Solfa notation is a system that uses syllables (do, re, mi, fa, sol, la, ti) to represent the major scale notes that we have talked about. For example in the key of C.
+        </p>
+
+        <div class="piano-diagram-container">
+            <div class="piano-diagram">
+                <div class="key w1" data-note="C">Do</div>
+                <div class="key black b1" data-note="C#"></div>
+                <div class="key w2" data-note="D">Re</div>
+                <div class="key black b2" data-note="D#"></div>
+                <div class="key w3" data-note="E">Mi</div>
+                <div class="key w4" data-note="F">Fa</div>
+                <div class="key black b3" data-note="F#"></div>
+                <div class="key w5" data-note="G">Sol</div>
+                <div class="key black b4" data-note="G#"></div>
+                <div class="key w6" data-note="A">La</div>
+                <div class="key black b5" data-note="A#"></div>
+                <div class="key w7" data-note="B">Ti</div>
+                <div class="key w8" data-note="C">Do</div>
+            </div>
+        </div>
+        <p class="fig-text">fig 1.4 C Major Scale in Solfa Notation</p>
+
+        <p>
+            It is also possible to hum the major scale of any key with your voice given that you can hum the tonic (do) of that key.
+        </p>
+
+        <h3 class="sub-topic-heading">Number Notation</h3>
+
+        <p>
+            The number notation (Nashville Number System) is another system just like the Solfa notation but this one uses numbers to represent each degree. For example in the key of C.
+        </p>
+
+
+        <div class="piano-diagram-container">
+            <div class="piano-diagram">
+                <div class="key w1" data-note="C">1</div>
+                <div class="key black b1" data-note="C#"></div>
+                <div class="key w2" data-note="D">2</div>
+                <div class="key black b2" data-note="D#"></div>
+                <div class="key w3" data-note="E">3</div>
+                <div class="key w4" data-note="F">4</div>
+                <div class="key black b3" data-note="F#"></div>
+                <div class="key w5" data-note="G">5</div>
+                <div class="key black b4" data-note="G#"></div>
+                <div class="key w6" data-note="A">6</div>
+                <div class="key black b5" data-note="A#"></div>
+                <div class="key w7" data-note="B">7</div>
+                <div class="key w8" data-note="C">1 or 8</div>
+            </div>
+        </div>
+        <p class="fig-text">fig 1.5 C Major Scale in Number Notation</p>
+
+        <p>
+            From now on, if any of these systems is used, it shouldn't be confusing. The solfa - <strong>Do</strong> can also mean <strong>1</strong> or major on the tonic note of that key. They might all mean the same thing depending on the use case.
+        </p>
+
+        <p>
+            Understanding the major scale and it's composition is so super important as almost everything in other lessons will still point back to it.
+        </p>
+
+        <div class="exercise-btn-con">
+            <a href="../exercises/exercise5.html">
+                <button class="exercise-btn excercise1">Exercise <i class="fa fa-play"></i> 5</button>
+            </a><span style="margin: 5px 0 0 5px;" id="exCompleted5"></span>
+        </div>
+    
+        <div class="next-prev-con">
+            <div class="prev-btn-con">
+                <a href="lesson4.html"><button>Next</button></a>
+            </div>
+            <div class="next-btn-con">
+                <a href="lesson6.html"><button>Next</button></a>
+            </div>
+        </div>
+
+    </main>
+
+
+    <div class="virtual-piano-con">
+
+        <div class="virtual-piano-inner-con">
+            <i class="fa-solid fa-x v-piano-close-btn" onclick="showVirtualPiano();"></i>
+            <div class="virtual-piano-diagram">
+                <div class="key v-p-key w1" onclick="playSound('C4.m4a')">C</div>
+                <div class="key v-p-key black b1" onclick="playSound('Cs4.m4a')">C# Db</div>
+                <div class="key v-p-key w2" onclick="playSound('D4.m4a')">D</div>
+                <div class="key v-p-key black b2" onclick="playSound('Ds4.m4a')">D# Eb</div>
+                <div class="key v-p-key w3" onclick="playSound('E4.m4a')">E</div>
+                <div class="key v-p-key w4" onclick="playSound('F4.m4a')">F</div>
+                <div class="key v-p-key black b3" onclick="playSound('Fs4.m4a')">F# Gb</div>
+                <div class="key v-p-key w5" onclick="playSound('G4.m4a')">G</div>
+                <div class="key v-p-key black b4" onclick="playSound('Gs4.m4a')">G# Ab</div>
+                <div class="key v-p-key w6" onclick="playSound('A4.m4a')">A</div>
+                <div class="key v-p-key black b5" onclick="playSound('As4.m4a')">A# Bb</div>
+                <div class="key v-p-key w7" onclick="playSound('B4.m4a')">B</div>
+                <div class="key v-p-key w8" onclick="playSound('C5.m4a')">C</div>
+
+                <div class="key v-p-key black b6" onclick="playSound('Cs5.m4a')">C# Db</div>
+                <div class="key v-p-key w9" onclick="playSound('D5.m4a')">D</div>
+                <div class="key v-p-key black b7" onclick="playSound('Ds5.m4a')">D# Eb</div>
+                <div class="key v-p-key w10" onclick="playSound('E5.m4a')">E</div>
+                <div class="key v-p-key w11" onclick="playSound('F5.m4a')">F</div>
+                <div class="key v-p-key black b8" onclick="playSound('Fs5.m4a')">F# Gb</div>
+                <div class="key v-p-key w12" onclick="playSound('G5.m4a')">G</div>
+                <div class="key v-p-key black b9" onclick="playSound('Gs5.m4a')">G# Ab</div>
+                <div class="key v-p-key w13" onclick="playSound('A5.m4a')">A</div>
+                <div class="key v-p-key black b10" onclick="playSound('As5.m4a')">A# Bb</div>
+                <div class="key v-p-key w14" onclick="playSound('B5.m4a')">B</div>
+                <div class="key v-p-key w15" onclick="playSound('C6.m4a')">C</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
